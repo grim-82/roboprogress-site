@@ -1,10 +1,12 @@
 # ROBOTPROGRESS.LDA — website
 
-Static multilingual site in Portuguese (default), English and Russian. Visitors can switch language in the header; their choice is remembered in the browser. No build tools or server are required.
+Static multilingual site in Portuguese (default) and English. Visitors can switch language in the header; their choice is remembered in the browser. No build tools or server are required.
+
+Live site: https://grim-82.github.io/roboprogress-site/
 
 ## Before publishing
 
-Replace the contact placeholders (phone, email and address/city) in the Contact section of `index.html` with real company details. The used-equipment section currently invites visitors to ask for current availability; add real listings when you have them.
+Contact details (phone, email and address) are in the Contact section of `index.html`; edit them there when they change. Used-equipment listings, their titles and photos are generated from the folders next to this project and committed as static HTML.
 
 ## Publish on GitHub Pages
 
