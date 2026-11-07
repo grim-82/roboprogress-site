@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://grim-82.github.io/roboprogress-site/sitemap.xml
