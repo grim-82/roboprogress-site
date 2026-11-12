@@ -1,4 +1,4 @@
-# ROBOTPROGRESS.LDA — website
+# RobotProgress Assistência Técnica Unipessoal, Limitada — website
 
 Static multilingual site in Portuguese (default) and English. Visitors can switch language in the header; their choice is remembered in the browser. No build tools or server are required.
 
