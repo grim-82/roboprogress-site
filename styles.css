@@ -31,3 +31,25 @@
 
 /* Company section — renovation highlight */
 .about-copy .about-highlight{border-left:2px solid #a8cf4a;padding-left:15px;color:#17212b;font-weight:600}
+
+/* Used equipment: collapsible block and category tree */
+.equipment-toggle>summary{list-style:none;cursor:pointer}
+.equipment-toggle>summary::-webkit-details-marker{display:none}
+.equipment-toggle-icon{flex:0 0 auto}
+.equipment-toggle[open] .equipment-toggle-icon{transform:rotate(45deg)}
+.product-list{display:block;background:none;border:0;border-radius:0;overflow:visible;margin:14px 0 16px}
+.category{border:1px solid #2a3540;border-radius:10px;margin-bottom:10px;background:#131b26}
+.category>summary{display:flex;align-items:center;gap:12px;padding:14px 16px;cursor:pointer;list-style:none;font-size:14px;font-weight:700;color:#eef2f5}
+.category>summary::-webkit-details-marker{display:none}
+.category>summary:before{content:'';width:7px;height:7px;border-right:1px solid var(--lime);border-bottom:1px solid var(--lime);transform:rotate(-45deg);transition:transform .2s;flex:0 0 auto}
+.category[open]>summary:before{transform:rotate(45deg)}
+.category-count{margin-left:auto;color:#8d99a5;font-size:11px;font-weight:500}
+.category-body{padding:0 12px 12px}
+.subcategory{border-top:1px solid #22303d;margin-top:6px}
+.subcategory>summary{display:flex;align-items:center;gap:10px;padding:10px 2px;cursor:pointer;list-style:none;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#aeb9c3}
+.subcategory>summary::-webkit-details-marker{display:none}
+.subcategory>summary:before{content:'';width:5px;height:5px;border-right:1px solid #7c8894;border-bottom:1px solid #7c8894;transform:rotate(-45deg);transition:transform .2s;flex:0 0 auto}
+.subcategory[open]>summary:before{transform:rotate(45deg)}
+.product-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:#2a3540;border:1px solid #2a3540;border-radius:8px;overflow:hidden;margin:8px 0 12px}
+@media(max-width:1100px){.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.product-grid{grid-template-columns:1fr}.category-body{padding:0 8px 8px}}
